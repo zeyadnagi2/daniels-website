@@ -1,0 +1,195 @@
+/* start of the nav bar */
+.navbar .nav-link,
+.navbar .navbar-brand {
+  color: white !important;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background: white;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-item:hover::after,
+.nav-item .nav-link.active::after {
+  width: 100%;
+}
+
+.nav-item .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background: white;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-item .nav-link:hover::after,
+.nav-item .nav-link.active::after {
+  width: 100%;
+}
+
+/* End of the nav bar */
+
+/* start of the home */
+.home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(./../images/bg.jpg);
+}
+
+.caption-home h1,
+p {
+  font-size: 4rem;
+}
+
+.social-icon {
+  height: 2.5rem;
+  width: 2.5rem;
+  font-size: 1rem;
+}
+
+.textAnimate::after {
+  content: " |";
+  -webkit-animation: typing 10s infinite alternate;
+  animation: typing 10s infinite alternate;
+  font-weight: 400;
+}
+
+@keyframes typing {
+  0% {
+    content: "|";
+  }
+  2.5% {
+    content: " L|";
+  }
+  5% {
+    content: " La|";
+  }
+  7.5% {
+    content: " Lar|";
+  }
+  10% {
+    content: " Larr|";
+  }
+  12.5% {
+    content: " Larry|";
+  }
+  15% {
+    content: " Larry |";
+  }
+  17.5% {
+    content: " Larry D|";
+  }
+  20% {
+    content: " Larry Da|";
+  }
+  22.5% {
+    content: " Larry Dan|";
+  }
+  25% {
+    content: " Larry Dani|";
+  }
+  27.5% {
+    content: " Larry Danie|";
+  }
+  30% {
+    content: " Larry Daniel|";
+  }
+  32.5% {
+    content: " Larry Daniels|";
+  }
+  35% {
+    content: " Larry Daniel|";
+  }
+  37.5% {
+    content: " Larry Danie|";
+  }
+  40% {
+    content: " Larry Dani|";
+  }
+  42.5% {
+    content: " Larry Dan|";
+  }
+  45% {
+    content: " Larry Da|";
+  }
+  47.5% {
+    content: " Larry D|";
+  }
+  50% {
+    content: " Larry |";
+  }
+  52.5% {
+    content: " Larr|";
+  }
+  55% {
+    content: " Lar|";
+  }
+  57.5% {
+    content: " La|";
+  }
+  60% {
+    content: " L|";
+  }
+  62.5% {
+    content: " D|";
+  }
+  65% {
+    content: " De|";
+  }
+  67.5% {
+    content: " Dev|";
+  }
+  70% {
+    content: " Deve|";
+  }
+  72.5% {
+    content: " Devel|";
+  }
+  75% {
+    content: " Develo|";
+  }
+  77.5% {
+    content: " Develop|";
+  }
+  80% {
+    content: " Develope|";
+  }
+  82.5% {
+    content: " Developer|";
+  }
+  85% {
+    content: " Develope|";
+  }
+  87.5% {
+    content: " Develop|";
+  }
+  90% {
+    content: " Develo|";
+  }
+  92.5% {
+    content: " Des|";
+  }
+  95% {
+    content: " Desi|";
+  }
+  97.5% {
+    content: " Desig|";
+  }
+  100% {
+    content: " Designer|";
+  }
+}
+
+/* End of the home */
