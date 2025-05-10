@@ -11,12 +11,17 @@ body {
 .title {
   font-weight: 900;
 }
+
+a {
+  text-decoration: none;
+}
 /* End of global elements */
 
 /* start of the nav bar */
 .navbar-brand {
   font-weight: 900;
 }
+
 .navbar .nav-link,
 .navbar .navbar-brand {
   color: white !important;
@@ -266,7 +271,6 @@ p {
   --bs-btn-hover-bg: #fff;
   --bs-btn-hover-border-color: #000;
 }
-
 /* End of the About */
 
 /* Start of the services */
@@ -287,6 +291,39 @@ p {
 }
 /* End of the services */
 
+/* start of the work */
+.work {
+  background-color: #f7f7f7;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  margin-inline: 5px;
+  background-color: rgb(150, 150, 150);
+  transition: background-color 0.3s ease;
+}
+
+.carousel-indicators [data-bs-target]:hover {
+  background-color: rgb(68, 68, 68);
+}
+
+.admin-img img {
+  width: 100px;
+  height: 100px;
+}
+
+.admin-caption {
+  color: #5c5f5f;
+}
+
+.admin-title {
+  color: #5c5f5f;
+  font-size: 0.8rem;
+}
+/* end of the work */
+
 /* start of number */
 .number-p {
   color: gray;
@@ -295,7 +332,59 @@ p {
 .number-h {
   font-weight: 900;
 }
+
 /* end of number */
+
+/* start of the team */
+.team {
+  background-color: #f7f7f7;
+}
+
+.blog-caption {
+  background-color: #5b5b5b;
+}
+
+.blog img {
+  transition: all 0.5s;
+}
+
+.blog:hover img {
+  transform: scale(1.2);
+}
+
+.overlay {
+  opacity: 0;
+  top: 7px;
+  bottom: 7px;
+  right: 7px;
+  left: 7px;
+  background-color: white;
+  transition: all 0.8s;
+  transform: scale(0.6) rotateY(0deg);
+  transform-origin: center;
+}
+
+.blog:hover .overlay {
+  opacity: 0.95;
+  transform: scale(1) rotateY(360deg);
+}
+
+.team-icon {
+  height: 2.5rem;
+  width: 2.5rem;
+  font-size: 1rem;
+  background-color: #000;
+  color: white;
+
+  transition: all 0.5s;
+}
+
+.team-icon:hover{
+  background-color: white;
+  color: #000;
+  border: #000 1.5px solid;
+}
+/* end of the team */
 
 /* start of the contactus */
 .contact-icon {
