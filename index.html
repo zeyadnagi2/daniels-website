@@ -73,10 +73,9 @@
     <!-- ============================== End of the nav bar =============================== -->
 
     <!-- ============================== start of the Home =============================== -->
-    <header>
+    <header id="home">
       <div
         class="home w-100 vh-100 d-flex justify-content-center align-items-center"
-        id="home"
       >
         <div class="caption-home text-center text-white">
           <h1 class="fw-bolder">Hello</h1>
@@ -122,14 +121,11 @@
         </div>
       </div>
     </header>
-    <!-- ============================== start of the Home =============================== -->
+    <!-- ============================== End of the Home =============================== -->
 
     <!-- ============================== start of the About =============================== -->
-    <section>
-      <div
-        class="container about d-flex flex-column flex-md-row mt-5 gap-5"
-        id="about"
-      >
+    <section id="about">
+      <div class="container about d-flex flex-column flex-md-row mt-5 gap-5">
         <div class="about-img dotted-bg mt-5 col-12 col-md-6">
           <img class="w-100" src="./images/hero.jpg" alt="about me hero" />
         </div>
@@ -205,12 +201,11 @@
         </div>
       </div>
     </section>
-
-    <!-- ============================== start of the About =============================== -->
+    <!-- ============================== End of the About =============================== -->
 
     <!-- ============================== start of the services =============================== -->
-    <section>
-      <div class="services my-5 p-5" id="services">
+    <section id="services">
+      <div class="services my-5 p-5">
         <header class="title text-center pt-4 bg">
           <h1 class="fw-bolder pt-2 d-inline-block dotted-bg">Services.</h1>
         </header>
@@ -326,17 +321,136 @@
         </div>
       </div>
     </section>
-    <!-- ============================== start of the services =============================== -->
+    <!-- ============================== End of the services =============================== -->
 
     <!-- ============================== start of the work =============================== -->
-    <section>
-      <div class="work my-5 p-5" id="work">
-        <header class="title text-center pt-4 bg">
-          <h1 class="fw-bolder pt-2 d-inline-block dotted-bg">Portfolio.</h1>
-        </header>
+    <section id="numbers">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-3 py-4">
+            <div class="number-item text-center">
+              <i class="fa-solid fa-users text-black fs-1 mb-3"></i>
+              <h3 class="number-h">850</h3>
+              <p class="lead fw-bold number-p">Happy Customers</p>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3 py-4">
+            <div class="number-item text-center">
+              <i class="fa-solid fa-thumbs-up text-black fs-1 mb-3"></i>
+              <h3 class="number-h">230</h3>
+              <p class="lead fw-bold number-p">Complete Projects</p>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3 py-4">
+            <div class="number-item text-center">
+              <i class="fa-solid fa-microphone text-black fs-1 mb-3"></i>
+              <h3 class="number-h">9450</h3>
+              <p class="lead fw-bold number-p">Lines Of Code</p>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3 py-4">
+            <div class="number-item text-center">
+              <i class="fa-solid fa-circle-down text-black fs-1 mb-3"></i>
+              <h3 class="number-h">780</h3>
+              <p class="lead fw-bold number-p">Files Downloaded</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
-    <!-- ============================== start of the work =============================== -->
+    <!-- ============================== End of the work =============================== -->
+
+    <!-- ============================== start of the Contact us =============================== -->
+    <section id="contact">
+      <div class="work my-5 p-5">
+        <header class="title text-center pt-4 bg">
+          <h1 class="fw-bolder pt-2 d-inline-block dotted-bg">Contact Us.</h1>
+        </header>
+
+        <div class="container text-center mt-5">
+          <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <div class="contact-item">
+                <div
+                  class="contact-icon rounded-circle d-flex justify-content-center align-items-center fs-2 m-auto"
+                >
+                  <i class="fa-solid fa-location-arrow"></i>
+                </div>
+
+                <h4 class="fw-bold mt-4">Address</h4>
+                <p class="lead">6834 Hollywood Blvd - Los Angeles CA</p>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <div class="contact-item">
+                <div
+                  class="contact-icon rounded-circle d-flex justify-content-center align-items-center fs-2 m-auto"
+                >
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+
+                <h4 class="fw-bold mt-4">Email</h4>
+                <p class="lead">Support@website.com</p>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <div class="contact-item">
+                <div
+                  class="contact-icon rounded-circle d-flex justify-content-center align-items-center fs-2 m-auto"
+                >
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+
+                <h4 class="fw-bold mt-4">Phone</h4>
+                <p class="lead">+20 010 2517 8918</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container form">
+          <form>
+            <div class="form-row d-flex justify-content-between my-3 mt-5">
+              <input
+                type="text"
+                class="form-control name"
+                name="name"
+                placeholder="Name"
+                required
+              />
+              <input
+                type="email"
+                class="form-control email"
+                name="email"
+                placeholder="Email"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <textarea
+                class="form-control"
+                name="message"
+                rows="5"
+                placeholder="Your message"
+                required
+              ></textarea>
+            </div>
+            <button type="button" class="btn btn-dark submit-btn">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- ============================== End of the Contact us =============================== -->
+
+    <!-- ============================== start of the footer =============================== -->
+    <footer>
+      <p class="fs-6 text-center p-5 m-0">
+        Copy Right 2018 © By Daniels All Rights Reserved
+      </p>
+    </footer>
+    <!-- ============================== End of the footer =============================== -->
 
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/index.js"></script>

@@ -63,8 +63,6 @@ body {
 .home {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(./../images/bg.jpg);
-
-  
 }
 
 .caption-home h1,
@@ -289,5 +287,53 @@ p {
 }
 /* End of the services */
 
-/* End of the work */
-/* End of the work */
+/* start of number */
+.number-p {
+  color: gray;
+}
+
+.number-h {
+  font-weight: 900;
+}
+/* end of number */
+
+/* start of the contactus */
+.contact-icon {
+  width: 5rem;
+  height: 5rem;
+  background-color: #f1f1f1;
+  transition: all 1s;
+}
+
+.contact-item:hover .contact-icon {
+  background-color: black;
+  color: white;
+}
+
+.form-row .name,
+.email {
+  width: 48%;
+  height: 3rem;
+}
+
+.form-control,
+.form-control:focus {
+  background-color: #f4f4f4;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  font-weight: 500;
+  color: gray;
+}
+
+.submit-btn {
+  width: 10rem;
+}
+/* End of the contactus */
+
+/* start of the footer */
+footer p {
+  background-color: #000000;
+  color: #6b7f80;
+}
+/* End of the foorer */
