@@ -291,8 +291,8 @@ p {
 }
 /* End of the services */
 
-/* start of the work */
-.work {
+/* start of the clients */
+.client {
   background-color: #f7f7f7;
 }
 
@@ -322,7 +322,7 @@ p {
   color: #5c5f5f;
   font-size: 0.8rem;
 }
-/* end of the work */
+/* end of the clients */
 
 /* start of number */
 .number-p {
