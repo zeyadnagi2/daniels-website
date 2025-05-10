@@ -1,4 +1,22 @@
+/* strat of global elements */
+.dotted-bg {
+  background-image: radial-gradient(#bbb9b9 1.5px, transparent 1.5px);
+  background-size: 20px 20px;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.title {
+  font-weight: 900;
+}
+/* End of global elements */
+
 /* start of the nav bar */
+.navbar-brand {
+  font-weight: 900;
+}
 .navbar .nav-link,
 .navbar .navbar-brand {
   color: white !important;
@@ -39,13 +57,14 @@
 .nav-item .nav-link.active::after {
   width: 100%;
 }
-
 /* End of the nav bar */
 
 /* start of the home */
 .home {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(./../images/bg.jpg);
+
+  
 }
 
 .caption-home h1,
@@ -191,5 +210,84 @@ p {
     content: " Designer|";
   }
 }
-
 /* End of the home */
+
+/* End of the About */
+.about-img img {
+  position: relative;
+  bottom: 2.2rem;
+  left: 2rem;
+}
+
+.caption-about .title {
+  color: gray;
+}
+
+.caption-about .discription {
+  max-width: 45rem;
+}
+
+.caption-about .discription span {
+  color: gray;
+}
+
+.progress-bar-outer.custom-bar {
+  width: 100%;
+  height: 30px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.progress-bar-inner.custom-fill {
+  height: 100%;
+  background-color: black;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.bar-label {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  color: white;
+  font-weight: 500;
+}
+
+.contactme-btn,
+.download-btn {
+  width: 10rem;
+}
+
+.btn-dark {
+  --bs-btn-hover-color: #212529;
+  --bs-btn-hover-bg: #fff;
+  --bs-btn-hover-border-color: #000;
+}
+
+/* End of the About */
+
+/* Start of the services */
+.services {
+  background-color: #f7f7f7;
+}
+
+.icon-service {
+  width: 6rem;
+  height: 6rem;
+  background-color: #f1f1f1;
+  transition: all 1s;
+}
+
+.item:hover .icon-service {
+  color: white;
+  background-color: black;
+}
+/* End of the services */
+
+/* End of the work */
+/* End of the work */
