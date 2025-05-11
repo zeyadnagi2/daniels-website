@@ -291,6 +291,51 @@ p {
 }
 /* End of the services */
 
+/* start of the work */
+.work .nav-pills .nav-link.active,
+.work .nav-pills .nav-link:hover,
+.work .nav-pills .show > .nav-link {
+  color: black !important;
+  background-color: transparent !important;
+}
+
+.work .nav-link {
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+  position: relative;
+}
+
+.work .nav-link.active::after,
+.work .nav-link:hover::after {
+  content: '';
+  position: absolute;
+  bottom: -3px; /* Adjust this for desired space between the word and the underline */
+  left: 0;
+  width: 100%;
+  height: 2px; /* Adjust the thickness of the underline */
+  background-color: black;
+}
+
+
+.work-overlay {
+  top: 35px;
+  bottom: -35px;
+  left: 14px;
+  right: 14px;
+  background-color: white;
+  transition: all 0.7s;
+  opacity: 0;
+}
+
+.product:hover .work-overlay {
+  opacity: 1;
+  top: 14px;
+  bottom: 14px;
+}
+
+/* End of the work */
+
 /* start of the clients */
 .client {
   background-color: #f7f7f7;
@@ -379,7 +424,7 @@ p {
   transition: all 0.5s;
 }
 
-.team-icon:hover{
+.team-icon:hover {
   background-color: white;
   color: #000;
   border: #000 1.5px solid;
