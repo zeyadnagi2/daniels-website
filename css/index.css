@@ -216,9 +216,25 @@ p {
 /* End of the home */
 
 /* End of the About */
+/* Clean up spacing to reduce overall height and avoid scroll */
+
+.about-img {
+  margin-top: 2rem !important;
+}
+
+.caption-about {
+  margin-top: 2rem !important;
+  padding: 2rem !important;
+}
+
+.container.about {
+  margin-top: 2rem !important;
+  gap: 2rem !important;
+}
+
 .about-img img {
   position: relative;
-  bottom: 2.2rem;
+  bottom: 0; /* Changed from 2.2rem to 0 to avoid pushing layout down */
   left: 2rem;
 }
 
@@ -271,6 +287,12 @@ p {
   --bs-btn-hover-bg: #fff;
   --bs-btn-hover-border-color: #000;
 }
+
+/* Optional: prevent horizontal overflow */
+html, body {
+  overflow-x: hidden;
+}
+
 /* End of the About */
 
 /* Start of the services */
